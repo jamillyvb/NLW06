@@ -17,6 +17,8 @@ app.use(router);
 app.use(
     (err: Error, request: Request, response: Response, next: NextFunction) => {
 
+        // o middleware aqui serviu para capturar o erro
+
         //verificar se esse erro aqui é o mesmo erro do CreateUserService
         //se o erro é da instancia err
         if (err instanceof Error) {

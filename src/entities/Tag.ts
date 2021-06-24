@@ -2,7 +2,7 @@ import { Entity, PrimaryColumn, Column, CreateDateColumn, UpdateDateColumn } fro
 
 import { v4 as uuid} from "uuid";
 
-@Entity("tgs")
+@Entity("tags")
 class Tag{
 
     @PrimaryColumn()
@@ -17,6 +17,7 @@ class Tag{
     @UpdateDateColumn()
     updated_at: Date;
     
+    // verifica se o id NÃO está preenchido, se não tivesse o " ! " seria se ESTÁ presnchido
     constructor() {
         if (!this.id) {
           this.id = uuid();
