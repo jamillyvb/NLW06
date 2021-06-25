@@ -8,11 +8,11 @@ class CreateUserController {
     async handle(request: Request, response: Response) {       
         
             //pegou o nome email admin do banco e trouxe para cá
-            const { name, email, admin } = request.body;
+            const { name, email, admin, password } = request.body;
 
             const createUserService = new CreateUserService();
             //passando o nome email admin que recebeu do request.body
-            const user = await createUserService.execute({ name, email, admin });
+            const user = await createUserService.execute({ name, email, admin, password });
 
             return response.json(user);
 
