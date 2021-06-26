@@ -1,13 +1,16 @@
 import "reflect-metadata";
 import express, { Request, Response, NextFunction} from "express";
 import "express-async-errors";
-
+import cors from "cors";
 import { router } from "./routes";
-
 import "./database";//ctrl click e aponta para o database
 import { RepositoryNotTreeError } from "typeorm";
+
 //@types/express
 const app = express();
+
+// permite que vc faça o front end da aplication
+app.use(cors());
 
 app.use(express.json());
 

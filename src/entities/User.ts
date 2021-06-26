@@ -1,3 +1,4 @@
+import { Exclude } from "class-transformer";
 import {
     Entity,
     PrimaryColumn,
@@ -5,7 +6,7 @@ import {
     CreateDateColumn,
     UpdateDateColumn,
   } from "typeorm";
-  import { v4 as uuid } from "uuid";
+import { v4 as uuid } from "uuid";
   
   @Entity("users")
   class User {
@@ -21,6 +22,9 @@ import {
     @Column()
     admin: boolean;
     
+
+    // para não retornar a password
+    @Exclude()
     @Column()
     password: string;
   
