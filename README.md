@@ -1,3 +1,5 @@
+
+
 <h1 align="center">
   <br>
   <a><img src="https://d1fdloi71mui9q.cloudfront.net/yUionMNDTN6ypo1SVO7V_c3c142e0c4aee58746979d454bff3a085" alt="Nlw" width="100"></a>
@@ -8,11 +10,18 @@ NLW
 
 <h4 align="center">Next Level Week #06</h4>
 
-## language used
+# ✍️ About
 
-* Node.js
+The project name is valoriza, where a user can praise another user for some help received.
 
-## Run API
+# 💻  Technologies
+
+This project was made using:
+
+-   [NodeJS](https://nodejs.org/en/)
+-   [Express](https://expressjs.com/)
+
+# 📦 Run API
 
 * Install Dependencies
 
@@ -26,7 +35,7 @@ $ yarn typeorm migration:run
 
 $ yarn run dev
 
-## Applications used
+# 🚀Applications used
 
 * Beekeeper Studio
 * Insomnia
