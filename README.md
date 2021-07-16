@@ -16,15 +16,15 @@ NLW
 
 * Install Dependencies
 
-  - $ yarn install
+$ yarn install
 
 * Run Migrations
 
-  - $ yarn typeorm migration:run
+$ yarn typeorm migration:run
 
 *  Run Aplication
 
-  - $ yarn run dev
+$ yarn run dev
 
 ## Applications used
 
